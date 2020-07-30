@@ -15,9 +15,6 @@ pipeline {
             steps{
                 script{
                     app = docker.build("chinoguzman/train-schedule")
-                    app.inside{
-                        sh 'll'
-                    }
                 }
             }
         }
