@@ -16,7 +16,7 @@ pipeline {
                 script{
                     app = docker.build("chinoguzman/train-schedule")
                     app.inside{
-                        sh 'cat ${env.DOCKER_HOST_SOCKET_$SCHEMA_$PORT}'
+                        sh 'll'
                     }
                 }
             }
